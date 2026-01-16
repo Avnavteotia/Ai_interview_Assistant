@@ -1,12 +1,107 @@
-# React + Vite
+# 🎨 Frontend - AI Interview Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React-based frontend for the AI Interview Assistant application.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 18**: Modern React with hooks
+- **Vite**: Fast build tool and dev server
+- **TailwindCSS**: Utility-first CSS framework
+- **Axios**: HTTP client for API requests
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+## 🚀 Development
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+## 🏗️ Build
+
+```bash
+npm run build
+```
+
+## 📁 Project Structure
+
+```
+frontend/
+├── src/
+│   ├── components/       # Reusable React components
+│   ├── services/         # API service layer
+│   ├── hooks/            # Custom React hooks
+│   ├── assets/           # Static assets
+│   ├── App.jsx           # Main application component
+│   └── main.jsx          # Application entry point
+├── public/               # Public static files
+├── index.html            # HTML template
+├── vite.config.js        # Vite configuration
+├── tailwind.config.js    # TailwindCSS configuration
+└── package.json          # Dependencies and scripts
+```
+
+## 🔧 Configuration
+
+### Vite Config
+The Vite configuration includes:
+- React plugin for Fast Refresh
+- Development server on port 5173
+- Proxy configuration for backend API
+
+### Tailwind Config
+Custom Tailwind configuration with:
+- Extended color palette
+- Custom animations
+- Responsive breakpoints
+
+## 🌐 API Integration
+
+The frontend connects to the Flask backend at `http://localhost:5000`
+
+API endpoints:
+- `GET /api/health` - Health check
+- `POST /api/analyze-pose` - Body language analysis
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 🎨 Styling
+
+This project uses TailwindCSS for styling. Custom styles can be added in:
+- `src/index.css` - Global styles
+- `src/App.css` - Component-specific styles
+
+## 🔌 Environment Variables
+
+Create a `.env` file in the frontend directory if needed:
+
+```env
+VITE_API_URL=http://localhost:5000
+```
+
+## 🚀 Deployment
+
+Build the production bundle:
+
+```bash
+npm run build
+```
+
+The `dist` folder will contain the production-ready files.
+
+## 📚 Learn More
+
+- [React Documentation](https://react.dev)
+- [Vite Documentation](https://vitejs.dev)
+- [TailwindCSS Documentation](https://tailwindcss.com)
