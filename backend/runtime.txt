@@ -1,10 +1,1 @@
 python-3.11.5
-flask==3.0.0
-flask-cors==4.0.0
-supabase==2.3.0
-vosk==0.3.45
-mediapipe==0.10.14
-opencv-python==4.8.1.78
-python-dotenv==1.0.0
-gunicorn==21.2.0
-pillow==10.1.0
