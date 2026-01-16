@@ -33,7 +33,7 @@ source venv/bin/activate
 ### 3. Install Dependencies
 
 ```bash
-pip install flask flask-cors python-dotenv mediapipe opencv-python numpy
+pip install -r requirements.txt
 ```
 
 ## 🔑 Environment Setup
